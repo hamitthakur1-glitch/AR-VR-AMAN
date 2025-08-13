@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AlterImmersives — AR • VR Studio</title>
+    <meta name="description" content="AlterImmersives builds immersive AR/VR experiences: WebXR demos, VR training, product visualization, and interactive 3D." />
+    <meta property="og:title" content="AlterImmersives — AR • VR Studio" />
+    <meta property="og:description" content="Immersive AR/VR experiences, 3D modeling, and WebXR demos." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.06); }
+      .grid-auto-fit { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap:1rem; }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"AlterImmersives",
+        "url":"https://hamitthakur1-glitch.github.io/AR-VR/",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "business",
+          "email": "hamitthakur1@gmail.com"
+        }]
+      }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 glass">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#" class="text-lg font-semibold tracking-wide">AlterImmersives</a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-indigo-300">Services</a>
+          <a href="#work" class="hover:text-indigo-300">Work</a>
+          <a href="#videos" class="hover:text-indigo-300">Videos</a>
+          <a href="#stack" class="hover:text-indigo-300">Tech</a>
+          <a href="#contact" class="hover:text-indigo-300">Contact</a>
+          <a href="https://wa.me/918556882485" target="_blank" class="px-3 py-1.5 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-white">WhatsApp</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-white/10" aria-label="Open Menu">☰</button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden px-4 pb-3">
+        <div class="grid gap-2 text-sm">
+          <a href="#services" class="py-2 border-b border-white/10">Services</a>
+          <a href="#work" class="py-2 border-b border-white/10">Work</a>
+          <a href="#videos" class="py-2 border-b border-white/10">Videos</a>
+          <a href="#stack" class="py-2 border-b border-white/10">Tech</a>
+          <a href="#contact" class="py-2">Contact</a>
+          <a href="https://wa.me/918556882485" target="_blank" class="mt-1 inline-block px-3 py-1.5 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-white w-max">WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-indigo-600/30 via-fuchsia-500/10 to-transparent pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-4 py-20 sm:py-28 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-semibold leading-tight">
+            We build immersive <span class="text-indigo-400">AR</span> & <span class="text-fuchsia-400">VR</span> experiences
+          </h1>
+          <p class="mt-4 text-slate-300">Product visualization, virtual tours, WebXR demos, and training simulators — designed for performance and business impact.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#work" class="px-5 py-3 bg-white text-slate-900 rounded-2xl font-medium hover:bg-slate-200">See Recent Work</a>
+            <a href="mailto:hamitthakur1@gmail.com?subject=AR/VR%20Project%20Inquiry" class="px-5 py-3 border border-white/20 rounded-2xl font-medium hover:bg-white/10">Email Us</a>
+          </div>
+          <div class="mt-6 text-xs text-slate-400">Available for projects & collaborations.</div>
+        </div>
+        <div class="relative">
+          <div class="aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-slate-900">
+            <!-- YouTube search playlist embed (no specific video IDs required) -->
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=search&list=ar%20vr%20showreel%202024" title="AR/VR Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="absolute -bottom-4 -left-4 bg-white/5 border border-white/10 rounded-xl p-3 text-xs">WebXR • Unity • Unreal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Services</h2>
+      <p class="mt-2 text-slate-300">End‑to‑end delivery — from concept to publish.</p>
+      <div class="mt-8 grid-auto-fit">
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">AR Product Visualization</h3>
+          <p class="mt-2 text-sm text-slate-300">Photoreal 3D try‑on & placement for WebAR/ARCore/ARKit and 8th Wall.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">VR Tours & Training</h3>
+          <p class="mt-2 text-sm text-slate-300">Interactive training, simulations, and virtual tours for Quest/SteamVR.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">3D Modeling & Assets</h3>
+          <p class="mt-2 text-sm text-slate-300">Optimized, game‑ready models with PBR textures for Unity/Unreal/Blender.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="font-semibold">WebXR & Interactive 3D</h3>
+          <p class="mt-2 text-sm text-slate-300">High‑performance browser experiences with Three.js/React Three Fiber.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold">Recent Work</h2>
+          <p class="mt-2 text-slate-300">Public demos & case studies (placeholders — replace with your projects).</p>
+        </div>
+        <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-xl border border-white/15 hover:bg-white/10">Hire us →</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+        <a href="#" class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:border-indigo-400/40 transition">
+          <div class="aspect-video bg-[url('https://images.unsplash.com/photo-1529911814089-00e8e8e2edb5?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <div class="p-4">
+            <div class="font-medium">WebAR Furniture Try‑On</div>
+            <div class="mt-1 text-xs text-slate-400">Three.js • 8th Wall • GLTF</div>
+          </div>
+        </a>
+        <a href="#" class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:border-indigo-400/40 transition">
+          <div class="aspect-video bg-[url('https://images.unsplash.com/photo-1573167243872-43c6436c0d0b?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <div class="p-4">
+            <div class="font-medium">VR Safety Training</div>
+            <div class="mt-1 text-xs text-slate-400">Unity • Quest 3 • C#</div>
+          </div>
+        </a>
+        <a href="#" class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:border-indigo-400/40 transition">
+          <div class="aspect-video bg-[url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <div class="p-4">
+            <div class="font-medium">Interactive Car Configurator</div>
+            <div class="mt-1 text-xs text-slate-400">WebXR • R3F • HDRI</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos" class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Featured Videos</h2>
+      <p class="mt-2 text-slate-300">Handpicked YouTube playlists related to AR/VR. Replace with your own IDs anytime.</p>
+      <div class="mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+        <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+          <div class="aspect-video">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=search&list=ar%20vr%20showreel%20best" title="AR/VR Showreels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="p-4 text-sm">Top AR/VR Showreels</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+          <div class="aspect-video">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=search&list=webxr%20demo%20three.js" title="WebXR Demos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="p-4 text-sm">WebXR / Three.js Demos</div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+          <div class="aspect-video">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed?listType=search&list=vr%20training%20simulation%20unity" title="VR Training" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="p-4 text-sm">VR Training & Simulation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="stack" class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Tech Stack</h2>
+      <div class="mt-6 grid-auto-fit">
+        <ul class="space-y-1 text-slate-300 text-sm">
+          <li>Unity, Unreal Engine, Blender</li>
+          <li>Three.js / React Three Fiber, WebXR</li>
+          <li>8th Wall, ARCore, ARKit</li>
+          <li>GLTF/GLB, PBR, HDRI, Lightmaps</li>
+        </ul>
+        <ul class="space-y-1 text-slate-300 text-sm">
+          <li>Quest (2/3), Pico, SteamVR</li>
+          <li>Performance: Occlusion, LODs, draw calls</li>
+          <li>CI/CD: GitHub Pages, Netlify</li>
+          <li>Collaboration: Figma, Notion, Jira</li>
+        </ul>
+        <div class="rounded-2xl border border-white/10 p-5 bg-white/5">
+          <div class="font-medium">Why us?</div>
+          <p class="mt-2 text-sm text-slate-300">Fast delivery, mobile‑first performance, clean code, and business‑focused UX.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold">Let's build something immersive</h2>
+          <p class="mt-2 text-slate-300">Message us to discuss your project.</p>
+          <div class="mt-5 flex gap-3">
+            <a href="https://wa.me/918556882485" target="_blank" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white">WhatsApp</a>
+            <a href="mailto:hamitthakur1@gmail.com" class="px-4 py-2 rounded-xl border border-white/15 hover:bg-white/10">Email</a>
+          </div>
+          <div class="mt-5 text-xs text-slate-400">Or fill the form:</div>
+        </div>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="rounded-2xl p-5 border border-white/10 bg-white/5">
+          <div class="grid gap-4">
+            <input class="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-white/10" type="text" name="name" placeholder="Your name" required>
+            <input class="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-white/10" type="email" name="email" placeholder="Email" required>
+            <input class="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-white/10" type="text" name="phone" placeholder="Phone (optional)">
+            <textarea class="w-full px-4 py-3 rounded-xl bg-slate-900/60 border border-white/10" name="message" rows="5" placeholder="Project details"></textarea>
+            <button class="px-5 py-3 rounded-2xl bg-indigo-500 hover:bg-indigo-400" type="submit">Send Message</button>
+          </div>
+          <p class="mt-3 text-xs text-slate-400">Note: replace Formspree <code>your-form-id</code> with your free form ID.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-8 text-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>© <span id="year"></span> AlterImmersives. All rights reserved.</div>
+        <div class="flex gap-4 opacity-80">
+          <a href="#services" class="hover:text-indigo-300">Services</a>
+          <a href="#work" class="hover:text-indigo-300">Work</a>
+          <a href="#videos" class="hover:text-indigo-300">Videos</a>
+          <a href="#contact" class="hover:text-indigo-300">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('mobileMenu');
+      btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
